@@ -8,7 +8,7 @@ float longueur() {
 
 }
 enum EEtat { vide, palette,  rouleau };
-union Ucontenu {
+union UContenu {
     SPalette paletteCasier;
     SRouleau rouleauCasier; 
 };
@@ -36,7 +36,7 @@ int main()
 
     EEtat etatC1 = EEtat::vide;
 
-    UContenu const = { pa1 }; 
+    UContenu cont = { pa1 }; 
     cont.rouleauCasier = ro1; 
 
     SCasier c1;

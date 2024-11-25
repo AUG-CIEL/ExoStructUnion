@@ -23,7 +23,10 @@ struct SRouleau
     int numero; 
 };
 struct SCasier {
-
+    int px;
+    int py;
+    UContenu contenu;
+    EEtat etat;
 };
 
 int main()
@@ -45,8 +48,7 @@ int main()
     c1.px = 2; 
     c1.py = 3; 
 
-    int px;
-    int py;
+   
     int numero;
     SCasier tabCasier[9];
     cout << "Affichage Transgerbeur!\n";

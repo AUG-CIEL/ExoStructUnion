@@ -2,11 +2,57 @@
 //
 
 #include <iostream>
+using namespace std; 
+
+float longueur() {
+
+}
+enum EEtat { vide, palette,  rouleau };
+union Ucontenu {
+    SPalette paletteCasier;
+    SRouleau rouleauCasier; 
+};
+struct SPalette {
+    int poids;
+    char reference[20];
+
+};
+struct SRouleau
+{
+    float longueur; 
+    int numero; 
+};
+struct SCasier {
+
+};
 
 int main()
 {
-    std::cout << "Affichage Transgerbeur!\n";
+    SRouleau ro1 = { 10.5, 552 };
+
+    SPalette pa1; 
+    pa1.poids = 101.2;
+    strcpy_s(pa1.reference, "ref1");
+
+    EEtat etatC1 = EEtat::vide;
+
+    UContenu const = { pa1 }; 
+    cont.rouleauCasier = ro1; 
+
+    SCasier c1;
+    c1.contenu = cont; 
+    c1.etat = rouleau;
+    c1.px = 2; 
+    c1.py = 3; 
+
+    int px;
+    int py;
+    int numero;
+    SCasier tabCasier[9];
+    cout << "Affichage Transgerbeur!\n";
 }
+
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage

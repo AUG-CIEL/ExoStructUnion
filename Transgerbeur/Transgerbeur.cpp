@@ -23,7 +23,10 @@ struct SRouleau
     int numero; 
 };
 struct SCasier {
-
+    int px;
+    int py;
+    UContenu contenu;
+    EEtat etat;
 };
 
 int main()
@@ -45,11 +48,20 @@ int main()
     c1.px = 2; 
     c1.py = 3; 
 
-    int px;
-    int py;
+    SCasier c2;
+    c2.contenu.rouleauCasier = ro1;
+    c2.etat = EEtat::rouleau;  // L'état devient "rouleau" car on a affecté un rouleau
+    c2.px = 4;
+    c2.py = 5; 
+
+
+    SCasier tabCasier[9];
+    tabCasier[0] = c1;  // Casier c1 à l'indice 0
+    tabCasier[2] = c2;  // Casier c2 à l'indice 2
     int numero;
     SCasier tabCasier[9];
-    cout << "Affichage Transgerbeur!\n";
+
+   
 }
 
 

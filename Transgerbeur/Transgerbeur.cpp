@@ -61,7 +61,13 @@ int main()
     int numero;
     SCasier tabCasier[9];
 
-   
+   // utilisation de sizeof :
+    cout << "Taille de ro1 (SRouleau) : " << sizeof(ro1) << " octets" << endl;
+    cout << "Taille de pa1 (SPalette) : " << sizeof(pa1) << " octets" << endl;
+    cout << "Taille de c1 (SCasier) : " << sizeof(c1) << " octets" << endl;
+    cout << "Taille de c2 (SCasier) : " << sizeof(c2) << " octets" << endl;
+    cout << "Taille de UContenu : " << sizeof(UContenu) << " octets" << endl;
+    cout << "Taille de EEtat : " << sizeof(EEtat) << " octets" << endl;
 }
 
 

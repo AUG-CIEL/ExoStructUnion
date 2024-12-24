@@ -59,7 +59,7 @@ int main()
     tabCasier[0] = c1;  // Casier c1 à l'indice 0
     tabCasier[2] = c2;  // Casier c2 à l'indice 2
     int numero;
-    SCasier tabCasier[9];
+    
 
    // utilisation de sizeof :
     cout << "Taille de ro1 (SRouleau) : " << sizeof(ro1) << " octets" << endl;
